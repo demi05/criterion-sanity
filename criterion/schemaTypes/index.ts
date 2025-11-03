@@ -1,3 +1,4 @@
-import { property } from "./property"
+import { property } from "./property";
+import { propertyDetails } from "./project.details";
 
-export const schemaTypes = [property]
+export const schemaTypes = [property, propertyDetails]
