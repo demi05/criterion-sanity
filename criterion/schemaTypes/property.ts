@@ -152,5 +152,23 @@ export const property = {
         },
       ]
     },
+     {
+      name: 'floorPlan',
+      type: 'array',
+      title: 'Floor Plan',
+      of: [{ type: 'reference', to: [{ type: "floorPlan" }] }],
+    },
+    {
+      name: "reason",
+      type: "array",
+      title:"Reason",
+      of: [{ type: "reference", to: [{ type: "reason" }] }],
+    },
+    {
+      name: "pricing",
+      type: "array",
+      title:"Pricing",
+      of: [{ type: "reference", to: [{ type: "pricing" }] }],
+    }
   ]
 };
