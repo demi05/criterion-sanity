@@ -152,6 +152,20 @@ export const property = {
         },
       ]
     },
+    {
+  name: 'floorPlanLayout',
+  type: 'string',
+  title: 'Floor Plan Layout',
+  description: 'Choose how floor plans are displayed',
+  options: {
+    list: [
+      { title: 'Horizontal Carousel (Single Unit)', value: 'horizontal' },
+      { title: 'Grouped by Unit (Multiple Units)', value: 'grouped' },
+    ],
+    layout: 'radio'
+  },
+  initialValue: 'horizontal'
+},
      {
       name: 'floorPlan',
       type: 'array',
